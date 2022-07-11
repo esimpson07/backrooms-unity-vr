@@ -49,7 +49,7 @@ public class MapGeneration : MonoBehaviour
         if(!Physics.Raycast(new Vector3(x,(y + 1.9f),z),Vector3.down,2.0f))
         {
             GameObject GroundClone = Instantiate(Ground, new Vector3(x,y,z), Ground.transform.rotation);
-            GameObject CeilingClone = Instantiate(Ceiling, new Vector3(x,(y + 4.0f),z), Ceiling.transform.rotation);
+            GameObject CeilingClone = Instantiate(Ceiling, new Vector3(x,(y + 3.0f),z), Ceiling.transform.rotation);
             Wall1Prob = rand.Next(0,2) * rand.Next(0,2);
             Wall2Prob = rand.Next(0,2) * rand.Next(0,2);
             Wall3Prob = rand.Next(0,2) * rand.Next(0,2);
